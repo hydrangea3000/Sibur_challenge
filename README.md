@@ -6,10 +6,10 @@ My Solution conisits of:
 
    labeling images in `labelme` returns json format, so we need to convert to YOLO format using `labelme2yolo`
 2) Training YOLOv8 Instance Segmenation model on Custom Dataset ('carriage' / 'bridge') in [Colab](Training_segmentation.ipynb)
-3) If there is a 'bridge' in labels then we can define the final class as 'bridge down'
-4) If there ia s 'carriage' and no 'bridge' - then there are 2 options: 'bridge up' or 'train_in_out' --> Apply  Motion Detection function based on difference bwtween frames
+3) If there is a 'bridge' in results then we can define the final class as 'bridge down'
+4) If there is a 'carriage' and no 'bridge' - then there are 2 options: 'bridge up' or 'train_in_out' --> Apply  Motion Detection function based on difference bwtween frames
 
    If there is a significant difference (thresh) -> there is motion -> 'train_in_out', else no motion -> 'bridge up'
-5) If there is no 'carriage' and no 'bridge' in labels -> 'no action'
+5) If there is no 'carriage' and no 'bridge' in results -> 'no action'
 
-An additional complication of the competition was to create action recognition model which works fast on CPU. This can be achieved by converting YOLO to 'onnx' format (which is not availbale at the moment for Segmentation) or/ and take each _i_th_ frame.
+An additional complication of the competition was to create action recognition model which works fast on CPU. This can be achieved by converting YOLO to 'onnx' format (which is not availbale at the moment for Segmentation due to 'task=segment' param) or/ and take each _i_th_ frame.
