@@ -7,9 +7,13 @@ My Solution Pipeline:
    labeling images in `labelme` returns json format, so we need to convert to YOLO format using `labelme2yolo`
 2) Training YOLOv8 Instance Segmenation model on Custom Dataset ('carriage' / 'bridge') in [Colab](Training_segmentation.ipynb)
 3) [predict.py](https://github.com/hydrangea3000/Sibur_challenge/blob/main/predict.py) contains  Python script using OpenCV (cv2) and YOLOv8 to run inference on video frames and  motion detection algorithm based on difference between frames.
- -- If there is a 'bridge' in results of YOLOv8 then we can define the final class as _'bridge down'_
- -- If there is a 'carriage' and no 'bridge' - then there are 2 options: _'bridge up'_ or '_train_in_out'_ --> Apply  Motion Detection function
- -- If there is a significant difference (thresh) -> there is a motion -> _'train_in_out'_, else (no motion) -> '_bridge up'_
- -- If there is no 'carriage' and no 'bridge' in results -> _'no action'_
+
+   - If there is a 'bridge' in results of YOLOv8 then we can define the final class as _'bridge down'_
+ 
+   - If there is a 'carriage' and no 'bridge' - then there are 2 options: _'bridge up'_ or '_train_in_out'_ --> Apply  Motion Detection function
+ 
+   - If there is a significant difference (thresh) -> there is a motion -> _'train_in_out'_, else (no motion) -> '_bridge up'_
+ 
+   - If there is no 'carriage' and no 'bridge' in results -> _'no action'_
 
 An additional complication of the competition was to create action recognition model which works fast on CPU. This can be achieved by converting YOLO to 'onnx' format (which is not availbale at the moment for Segmentation due to 'task=segment' param) or/ and take each _i_th_ frame.
