@@ -19,21 +19,21 @@ My Solution Pipeline:
 
 -> output: [threshold.gif]() and dataframe:
 
-         |label|video|sum_thresh|
-         |-----|-----|----------|
-         |another class|0cbedb20b827e285.mp4|0.677280|
-         |train_in_out|1722443d154fd587.mp4|1.462680|
-         |another class|29edd98ae0bc4e08.mp4|0.773415|
-         |train_in_out|2ce08918cccbf9d0.mp4|2.244765|
-         |another class|2ed1d2e5c06d5472.mp4|0.713235|
-         |another class|42b9e817c0190acd.mp4|0.691305|
-         |train_in_out|4fca1d1c23743300.mp4|1.003680|
-         |another class|5bb806639d163766.mp4|0.746130|
-         |another class|84440a85bdcda906.mp4|0.726495|
-         |another class|d28e45d3c71083f2.mp4|0.656370|
-         |another class|f9397b79bb605494.mp4|0.868020|
-         |train_in_out|fa37a03b72bd12b0.mp4|2.102220|
-         train_in_out|fbdf51391f396341.mp4|1.698555|
+|label|video|sum_thresh|
+|-----|-----|----------|
+|another class|0cbedb20b827e285.mp4|0.677280|
+|train_in_out|1722443d154fd587.mp4|1.462680|
+|another class|29edd98ae0bc4e08.mp4|0.773415|
+|train_in_out|2ce08918cccbf9d0.mp4|2.244765|
+|another class|2ed1d2e5c06d5472.mp4|0.713235|
+|another class|42b9e817c0190acd.mp4|0.691305|
+|train_in_out|4fca1d1c23743300.mp4|1.003680|
+|another class|5bb806639d163766.mp4|0.746130|
+|another class|84440a85bdcda906.mp4|0.726495|
+|another class|d28e45d3c71083f2.mp4|0.656370|
+|another class|f9397b79bb605494.mp4|0.868020|
+|train_in_out|fa37a03b72bd12b0.mp4|2.102220|
+train_in_out|fbdf51391f396341.mp4|1.698555|
          
 
    
