@@ -15,7 +15,7 @@ My Solution Pipeline:
    - If there is a significant difference (thresh) -> there is a motion -> _'train_in_out'_, else (no motion) -> '_bridge up'_
  
    - If there is no 'carriage' and no 'bridge' in results -> _'no action'_
-4) [motion_detection.py]() - Python script which shows in details how motion detection algo works on 12 random videos from trainig dataset (videos_test)
+4) [motion_detection.py]() - _optional_ Python script to show in details how motion detection algo works on 12 random videos from trainig dataset (videos_test)
 
 -> output: [threshold.gif]() and dataframe:
 
