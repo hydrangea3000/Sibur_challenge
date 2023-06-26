@@ -6,7 +6,7 @@ import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import imageio
 
-parser = argparse.ArgumentParser('run webcamera')
+parser = argparse.ArgumentParser('run motion detection')
 parser.add_argument('-v', '--video_dir', type = str, help ='video directory')
 parser.add_argument('-n', '--number_of_video', type = int, help ='number_of_video in video_dir')
 args = parser.parse_args()
